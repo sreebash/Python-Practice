@@ -1,6 +1,8 @@
-print('Enter your diserable input:')
+print('Enter your input number:')
 number = int(input())
-if number % 400 == 0 | (number % 4 ==0 & number % 100 != 0):
-    print('The number is leap year')
+if number % 4 == 0 and number % 100 != 0:
+    print(number, 'is a leap year.')
+elif number % 100 == 0 and number % 400 == 0:
+    print(number, 'is a leap year.')
 else:
-    print('The number is not leap year')
+    print(number, 'is not a leap year.')
